@@ -48,12 +48,12 @@ public class User
 
     public void DisplayInfo()
     {
-        Console.WriteLine("\nІнформація про користувача:");
-        Console.WriteLine($"Логін: {login}");
-        Console.WriteLine($"Ім'я: {firstName}");
-        Console.WriteLine($"Прізвище: {lastName}");
-        Console.WriteLine($"Вік: {age}");
-        Console.WriteLine($"Дата заповнення анкети: {questionnaireDate:dd.MM.yyyy HH:mm:ss}");
+  Console.WriteLine("\nР†РЅС„РѕСЂРјР°С†С–СЏ РїСЂРѕ РєРѕСЂРёСЃС‚СѓРІР°С‡Р°:");
+  Console.WriteLine($"Р›РѕРіС–РЅ: {login}");
+  Console.WriteLine($"Р†Рј'СЏ: {firstName}");
+  Console.WriteLine($"РџСЂС–Р·РІРёС‰Рµ: {lastName}");
+  Console.WriteLine($"Р’С–Рє: {age}");
+  Console.WriteLine($"Р”Р°С‚Р° Р·Р°РїРѕРІРЅРµРЅРЅСЏ Р°РЅРєРµС‚Рё: {questionnaireDate:dd.MM.yyyy HH:mm:ss}");
     }
 }
 
@@ -61,22 +61,23 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Заповніть анкету користувача:");
+     Console.WriteLine("Р—Р°РїРѕРІРЅС–С‚СЊ Р°РЅРєРµС‚Сѓ РєРѕСЂРёСЃС‚СѓРІР°С‡Р°:");
 
-        Console.Write("Логін: ");
-        string login = Console.ReadLine();
+Console.Write("Р›РѕРіС–РЅ: ");
+string login = Console.ReadLine();
 
-        Console.Write("Ім'я: ");
-        string firstName = Console.ReadLine();
+Console.Write("Р†Рј'СЏ: ");
+string firstName = Console.ReadLine();
 
-        Console.Write("Прізвище: ");
-        string lastName = Console.ReadLine();
+Console.Write("РџСЂС–Р·РІРёС‰Рµ: ");
+string lastName = Console.ReadLine();
 
-        Console.Write("Вік: ");
-        int age = int.Parse(Console.ReadLine());
+Console.Write("Р’С–Рє: ");
+int age = int.Parse(Console.ReadLine());
 
         User user = new User(login, firstName, lastName, age);
 
         user.DisplayInfo();
     }
+
 }
